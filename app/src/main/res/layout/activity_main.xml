@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.poli.departamentoeletronica.analisadordevibracoes.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:id="@+id/botaoSalvarId"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Parametrizando dados"
+        android:id="@+id/textViewAceleracaoId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X: 0"
+        android:id="@+id/tVAceXId"
+        android:visibility="invisible"
+        android:layout_below="@+id/textViewAceleracaoId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Y: 0"
+        android:id="@+id/tVAceYId"
+        android:layout_alignTop="@+id/tVAceXId"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Z: 0"
+        android:id="@+id/tVAceZId"
+        android:visibility="invisible"
+        android:layout_below="@+id/textViewAceleracaoId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Aguarde..."
+        android:id="@+id/textViewVelocidadeId"
+        android:layout_below="@+id/tVAceXId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="X: 0"
+        android:id="@+id/tVVelXId"
+        android:visibility="invisible"
+        android:layout_below="@+id/textViewVelocidadeId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Y: 0"
+        android:id="@+id/tVVelYId"
+        android:layout_alignTop="@+id/tVVelXId"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Z: 0"
+        android:id="@+id/tVVelZId"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/tVVelYId"
+        android:layout_alignRight="@+id/carregandoPBId"
+        android:layout_alignEnd="@+id/carregandoPBId" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carregandoPBId"
+        android:max="100"
+        android:indeterminate="false"
+        android:progress="0"
+        android:progressTint="#0e8800"
+        android:visibility="visible"
+        android:layout_above="@+id/botaoSalvarId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
