@@ -41,9 +41,6 @@ Você pode escolher uma das opções abaixo para testar o aplicativo:
 
 2. 💻 **Clonar e Rodar com Android Studio**  
    - Clone o repositório:
-     ```bash
-     git clone https://github.com/seu-usuario/vibracrava.git
-     ```
    - Abra o projeto no Android Studio  
    - Compile e execute no emulador ou em um dispositivo físico (recomendado, para uso real dos sensores)
- https://github.com/seu-usuario/vibracrava.git
+
